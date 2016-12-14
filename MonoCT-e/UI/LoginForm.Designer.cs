@@ -61,7 +61,7 @@
             this.tfUser.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tfUser.Properties.Appearance.Options.UseFont = true;
             this.tfUser.Size = new System.Drawing.Size(406, 22);
-            this.tfUser.TabIndex = 1;
+            this.tfUser.TabIndex = 0;
             conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule3.ErrorText = "Informe o Usuário";
             this.validator.SetValidationRule(this.tfUser, conditionValidationRule3);
@@ -99,7 +99,7 @@
             this.btnExit.Location = new System.Drawing.Point(308, 151);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(110, 33);
-            this.btnExit.TabIndex = 2;
+            this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Sair";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExit.UseVisualStyleBackColor = false;
@@ -116,7 +116,7 @@
             this.btnLogin.Location = new System.Drawing.Point(12, 151);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(114, 33);
-            this.btnLogin.TabIndex = 3;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Entrar";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -146,9 +146,11 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login MonoCT-e - Cadore Tecnologia";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.tfUser.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tfPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.validator)).EndInit();

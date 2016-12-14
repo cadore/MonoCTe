@@ -28,69 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerForm));
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule4 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule5 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule6 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule7 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule8 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule9 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnSave = new WCButtons.Black.ButtonSaveBlack();
             this.btnCancel = new WCButtons.Black.ButtonCancelBlack();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.searchLookUpEdit2 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.tfId = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.lbErrorDocument = new DevExpress.XtraEditors.LabelControl();
+            this.tfCity = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.cbState = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.tfComplement = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.tfNumber = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.tfCep = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            this.tfMobile = new DevExpress.XtraEditors.TextEdit();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            this.tfPhone = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
+            this.tfDistrict = new DevExpress.XtraEditors.TextEdit();
+            this.tfEmail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
+            this.tfAddress = new DevExpress.XtraEditors.TextEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.cbTypeDocument = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.tfISuframa = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.tfIE = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.tfFantasyName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.tfCorporateName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.tfDocument = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.validator = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCity.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfComplement.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCep.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfMobile.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfDistrict.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfAddress.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbTypeDocument.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfISuframa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfIE.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfFantasyName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCorporateName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfDocument.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.validator)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -118,6 +132,7 @@
             this.btnSave.Text = "Salvar";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -134,40 +149,43 @@
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.searchLookUpEdit2);
-            this.groupControl1.Controls.Add(this.searchLookUpEdit1);
-            this.groupControl1.Controls.Add(this.textEdit7);
+            this.groupControl1.Controls.Add(this.tfId);
+            this.groupControl1.Controls.Add(this.labelControl17);
+            this.groupControl1.Controls.Add(this.lbErrorDocument);
+            this.groupControl1.Controls.Add(this.tfCity);
+            this.groupControl1.Controls.Add(this.cbState);
+            this.groupControl1.Controls.Add(this.tfComplement);
             this.groupControl1.Controls.Add(this.labelControl16);
             this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Controls.Add(this.textEdit6);
+            this.groupControl1.Controls.Add(this.tfNumber);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl9);
-            this.groupControl1.Controls.Add(this.textEdit9);
+            this.groupControl1.Controls.Add(this.tfCep);
             this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.textEdit12);
+            this.groupControl1.Controls.Add(this.tfMobile);
             this.groupControl1.Controls.Add(this.labelControl15);
-            this.groupControl1.Controls.Add(this.textEdit10);
+            this.groupControl1.Controls.Add(this.tfPhone);
             this.groupControl1.Controls.Add(this.labelControl12);
-            this.groupControl1.Controls.Add(this.textEdit8);
-            this.groupControl1.Controls.Add(this.textEdit13);
+            this.groupControl1.Controls.Add(this.tfDistrict);
+            this.groupControl1.Controls.Add(this.tfEmail);
             this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.textEdit11);
+            this.groupControl1.Controls.Add(this.tfAddress);
             this.groupControl1.Controls.Add(this.labelControl13);
             this.groupControl1.Controls.Add(this.labelControl14);
-            this.groupControl1.Controls.Add(this.checkEdit1);
-            this.groupControl1.Controls.Add(this.comboBoxEdit1);
-            this.groupControl1.Controls.Add(this.textEdit3);
+            this.groupControl1.Controls.Add(this.cbTypeDocument);
+            this.groupControl1.Controls.Add(this.tfISuframa);
             this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.tfIE);
             this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.textEdit5);
+            this.groupControl1.Controls.Add(this.tfFantasyName);
             this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.tfCorporateName);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.tfDocument);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -177,16 +195,45 @@
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Clientes";
             // 
-            // searchLookUpEdit2
+            // tfId
             // 
-            this.searchLookUpEdit2.Location = new System.Drawing.Point(450, 265);
-            this.searchLookUpEdit2.Name = "searchLookUpEdit2";
-            this.searchLookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.tfId.Location = new System.Drawing.Point(674, 50);
+            this.tfId.Name = "tfId";
+            this.tfId.Properties.ReadOnly = true;
+            this.tfId.Size = new System.Drawing.Size(100, 20);
+            this.tfId.TabIndex = 22;
+            // 
+            // labelControl17
+            // 
+            this.labelControl17.Location = new System.Drawing.Point(674, 31);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(50, 13);
+            this.labelControl17.TabIndex = 21;
+            this.labelControl17.Text = "ID Interno";
+            // 
+            // lbErrorDocument
+            // 
+            this.lbErrorDocument.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorDocument.Location = new System.Drawing.Point(190, 70);
+            this.lbErrorDocument.Name = "lbErrorDocument";
+            this.lbErrorDocument.Size = new System.Drawing.Size(146, 13);
+            this.lbErrorDocument.TabIndex = 20;
+            this.lbErrorDocument.Text = "Documento inválido, verifique.";
+            this.lbErrorDocument.Visible = false;
+            // 
+            // tfCity
+            // 
+            this.tfCity.Location = new System.Drawing.Point(450, 265);
+            this.tfCity.Name = "tfCity";
+            this.tfCity.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit2.Properties.NullText = "";
-            this.searchLookUpEdit2.Properties.View = this.gridView1;
-            this.searchLookUpEdit2.Size = new System.Drawing.Size(324, 20);
-            this.searchLookUpEdit2.TabIndex = 18;
+            this.tfCity.Properties.NullText = "";
+            this.tfCity.Properties.View = this.gridView1;
+            this.tfCity.Size = new System.Drawing.Size(324, 20);
+            this.tfCity.TabIndex = 18;
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Informe a cidade";
+            this.validator.SetValidationRule(this.tfCity, conditionValidationRule1);
             // 
             // gridView1
             // 
@@ -195,16 +242,19 @@
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // searchLookUpEdit1
+            // cbState
             // 
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(345, 265);
-            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
-            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbState.Location = new System.Drawing.Point(345, 265);
+            this.cbState.Name = "cbState";
+            this.cbState.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.NullText = "";
-            this.searchLookUpEdit1.Properties.View = this.searchLookUpEdit1View;
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(99, 20);
-            this.searchLookUpEdit1.TabIndex = 19;
+            this.cbState.Properties.NullText = "";
+            this.cbState.Properties.View = this.searchLookUpEdit1View;
+            this.cbState.Size = new System.Drawing.Size(99, 20);
+            this.cbState.TabIndex = 19;
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Informe o Estado";
+            this.validator.SetValidationRule(this.cbState, conditionValidationRule2);
             // 
             // searchLookUpEdit1View
             // 
@@ -213,12 +263,12 @@
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // textEdit7
+            // tfComplement
             // 
-            this.textEdit7.Location = new System.Drawing.Point(605, 219);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Size = new System.Drawing.Size(169, 20);
-            this.textEdit7.TabIndex = 12;
+            this.tfComplement.Location = new System.Drawing.Point(605, 219);
+            this.tfComplement.Name = "tfComplement";
+            this.tfComplement.Size = new System.Drawing.Size(169, 20);
+            this.tfComplement.TabIndex = 12;
             // 
             // labelControl16
             // 
@@ -236,12 +286,15 @@
             this.labelControl7.TabIndex = 4;
             this.labelControl7.Text = "Endereço";
             // 
-            // textEdit6
+            // tfNumber
             // 
-            this.textEdit6.Location = new System.Drawing.Point(450, 219);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(149, 20);
-            this.textEdit6.TabIndex = 13;
+            this.tfNumber.Location = new System.Drawing.Point(450, 219);
+            this.tfNumber.Name = "tfNumber";
+            this.tfNumber.Size = new System.Drawing.Size(149, 20);
+            this.tfNumber.TabIndex = 13;
+            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule3.ErrorText = "Informe o numero";
+            this.validator.SetValidationRule(this.tfNumber, conditionValidationRule3);
             // 
             // labelControl8
             // 
@@ -259,15 +312,18 @@
             this.labelControl9.TabIndex = 6;
             this.labelControl9.Text = "Bairro";
             // 
-            // textEdit9
+            // tfCep
             // 
-            this.textEdit9.Location = new System.Drawing.Point(205, 265);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.Mask.EditMask = "00000-000";
-            this.textEdit9.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.textEdit9.Properties.Mask.SaveLiteral = false;
-            this.textEdit9.Size = new System.Drawing.Size(134, 20);
-            this.textEdit9.TabIndex = 14;
+            this.tfCep.Location = new System.Drawing.Point(205, 265);
+            this.tfCep.Name = "tfCep";
+            this.tfCep.Properties.Mask.EditMask = "00000-000";
+            this.tfCep.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.tfCep.Properties.Mask.SaveLiteral = false;
+            this.tfCep.Size = new System.Drawing.Size(134, 20);
+            this.tfCep.TabIndex = 14;
+            conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule4.ErrorText = "informe o CEP";
+            this.validator.SetValidationRule(this.tfCep, conditionValidationRule4);
             // 
             // labelControl10
             // 
@@ -277,15 +333,15 @@
             this.labelControl10.TabIndex = 7;
             this.labelControl10.Text = "Numero";
             // 
-            // textEdit12
+            // tfMobile
             // 
-            this.textEdit12.EditValue = "";
-            this.textEdit12.Location = new System.Drawing.Point(206, 313);
-            this.textEdit12.Name = "textEdit12";
-            this.textEdit12.Properties.Mask.EditMask = "(00) 0000-0000";
-            this.textEdit12.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.textEdit12.Size = new System.Drawing.Size(133, 20);
-            this.textEdit12.TabIndex = 15;
+            this.tfMobile.EditValue = "";
+            this.tfMobile.Location = new System.Drawing.Point(206, 313);
+            this.tfMobile.Name = "tfMobile";
+            this.tfMobile.Properties.Mask.EditMask = "(00) 0000-0000";
+            this.tfMobile.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.tfMobile.Size = new System.Drawing.Size(133, 20);
+            this.tfMobile.TabIndex = 15;
             // 
             // labelControl15
             // 
@@ -295,14 +351,14 @@
             this.labelControl15.TabIndex = 8;
             this.labelControl15.Text = "Celular";
             // 
-            // textEdit10
+            // tfPhone
             // 
-            this.textEdit10.Location = new System.Drawing.Point(10, 313);
-            this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Properties.Mask.EditMask = "(00) 0000-0000";
-            this.textEdit10.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.textEdit10.Size = new System.Drawing.Size(189, 20);
-            this.textEdit10.TabIndex = 15;
+            this.tfPhone.Location = new System.Drawing.Point(10, 313);
+            this.tfPhone.Name = "tfPhone";
+            this.tfPhone.Properties.Mask.EditMask = "(00) 0000-0000";
+            this.tfPhone.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.tfPhone.Size = new System.Drawing.Size(189, 20);
+            this.tfPhone.TabIndex = 15;
             // 
             // labelControl12
             // 
@@ -312,22 +368,25 @@
             this.labelControl12.TabIndex = 8;
             this.labelControl12.Text = "Telefone";
             // 
-            // textEdit8
+            // tfDistrict
             // 
-            this.textEdit8.Location = new System.Drawing.Point(10, 265);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Size = new System.Drawing.Size(189, 20);
-            this.textEdit8.TabIndex = 16;
+            this.tfDistrict.Location = new System.Drawing.Point(10, 265);
+            this.tfDistrict.Name = "tfDistrict";
+            this.tfDistrict.Size = new System.Drawing.Size(189, 20);
+            this.tfDistrict.TabIndex = 16;
+            conditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule5.ErrorText = "Informe o bairro";
+            this.validator.SetValidationRule(this.tfDistrict, conditionValidationRule5);
             // 
-            // textEdit13
+            // tfEmail
             // 
-            this.textEdit13.EditValue = "";
-            this.textEdit13.Location = new System.Drawing.Point(345, 313);
-            this.textEdit13.Name = "textEdit13";
-            this.textEdit13.Properties.Mask.EditMask = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}";
-            this.textEdit13.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.textEdit13.Size = new System.Drawing.Size(429, 20);
-            this.textEdit13.TabIndex = 17;
+            this.tfEmail.EditValue = "";
+            this.tfEmail.Location = new System.Drawing.Point(345, 313);
+            this.tfEmail.Name = "tfEmail";
+            this.tfEmail.Properties.Mask.EditMask = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}";
+            this.tfEmail.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.tfEmail.Size = new System.Drawing.Size(429, 20);
+            this.tfEmail.TabIndex = 17;
             // 
             // labelControl11
             // 
@@ -337,12 +396,15 @@
             this.labelControl11.TabIndex = 9;
             this.labelControl11.Text = "CEP";
             // 
-            // textEdit11
+            // tfAddress
             // 
-            this.textEdit11.Location = new System.Drawing.Point(10, 219);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Size = new System.Drawing.Size(434, 20);
-            this.textEdit11.TabIndex = 17;
+            this.tfAddress.Location = new System.Drawing.Point(10, 219);
+            this.tfAddress.Name = "tfAddress";
+            this.tfAddress.Size = new System.Drawing.Size(434, 20);
+            this.tfAddress.TabIndex = 17;
+            conditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule6.ErrorText = "Informe o endereço";
+            this.validator.SetValidationRule(this.tfAddress, conditionValidationRule6);
             // 
             // labelControl13
             // 
@@ -360,62 +422,59 @@
             this.labelControl14.TabIndex = 11;
             this.labelControl14.Text = "Cidade";
             // 
-            // checkEdit1
+            // cbTypeDocument
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(489, 52);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "Isento";
-            this.checkEdit1.Size = new System.Drawing.Size(57, 15);
-            this.checkEdit1.TabIndex = 3;
-            // 
-            // comboBoxEdit1
-            // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(10, 50);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbTypeDocument.Location = new System.Drawing.Point(10, 50);
+            this.cbTypeDocument.Name = "cbTypeDocument";
+            this.cbTypeDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            this.cbTypeDocument.Properties.Items.AddRange(new object[] {
             "CNPJ/Pessoa Juridica",
             "CPF/Pessoa Fisica"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(100, 20);
-            this.comboBoxEdit1.TabIndex = 2;
+            this.cbTypeDocument.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbTypeDocument.Size = new System.Drawing.Size(160, 20);
+            this.cbTypeDocument.TabIndex = 2;
+            conditionValidationRule7.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule7.ErrorText = "Informe o tipo de documento";
+            this.validator.SetValidationRule(this.cbTypeDocument, conditionValidationRule7);
+            this.cbTypeDocument.SelectedIndexChanged += new System.EventHandler(this.cbTypeDocument_SelectedIndexChanged);
             // 
-            // textEdit3
+            // tfISuframa
             // 
-            this.textEdit3.Location = new System.Drawing.Point(563, 50);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(135, 20);
-            this.textEdit3.TabIndex = 1;
+            this.tfISuframa.Location = new System.Drawing.Point(523, 50);
+            this.tfISuframa.Name = "tfISuframa";
+            this.tfISuframa.Size = new System.Drawing.Size(135, 20);
+            this.tfISuframa.TabIndex = 1;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(563, 31);
+            this.labelControl4.Location = new System.Drawing.Point(523, 31);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(94, 13);
             this.labelControl4.TabIndex = 0;
             this.labelControl4.Text = "Inscrição SUFRAMA";
             // 
-            // textEdit1
+            // tfIE
             // 
-            this.textEdit1.Location = new System.Drawing.Point(348, 50);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(135, 20);
-            this.textEdit1.TabIndex = 1;
+            this.tfIE.Location = new System.Drawing.Point(360, 50);
+            this.tfIE.Name = "tfIE";
+            this.tfIE.Size = new System.Drawing.Size(149, 20);
+            this.tfIE.TabIndex = 1;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(348, 31);
+            this.labelControl3.Location = new System.Drawing.Point(360, 31);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(18, 13);
             this.labelControl3.TabIndex = 0;
             this.labelControl3.Text = "I.E.";
             // 
-            // textEdit5
+            // tfFantasyName
             // 
-            this.textEdit5.Location = new System.Drawing.Point(10, 153);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(764, 20);
-            this.textEdit5.TabIndex = 1;
+            this.tfFantasyName.Location = new System.Drawing.Point(10, 153);
+            this.tfFantasyName.Name = "tfFantasyName";
+            this.tfFantasyName.Size = new System.Drawing.Size(764, 20);
+            this.tfFantasyName.TabIndex = 1;
             // 
             // labelControl6
             // 
@@ -425,12 +484,15 @@
             this.labelControl6.TabIndex = 0;
             this.labelControl6.Text = "Nome Fantasia";
             // 
-            // textEdit4
+            // tfCorporateName
             // 
-            this.textEdit4.Location = new System.Drawing.Point(10, 103);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(764, 20);
-            this.textEdit4.TabIndex = 1;
+            this.tfCorporateName.Location = new System.Drawing.Point(10, 103);
+            this.tfCorporateName.Name = "tfCorporateName";
+            this.tfCorporateName.Size = new System.Drawing.Size(764, 20);
+            this.tfCorporateName.TabIndex = 1;
+            conditionValidationRule8.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule8.ErrorText = "Informe a Razão Social";
+            this.validator.SetValidationRule(this.tfCorporateName, conditionValidationRule8);
             // 
             // labelControl5
             // 
@@ -440,16 +502,21 @@
             this.labelControl5.TabIndex = 0;
             this.labelControl5.Text = "Razão Social/Nome";
             // 
-            // textEdit2
+            // tfDocument
             // 
-            this.textEdit2.Location = new System.Drawing.Point(130, 50);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(197, 20);
-            this.textEdit2.TabIndex = 1;
+            this.tfDocument.Enabled = false;
+            this.tfDocument.Location = new System.Drawing.Point(179, 50);
+            this.tfDocument.Name = "tfDocument";
+            this.tfDocument.Size = new System.Drawing.Size(170, 20);
+            this.tfDocument.TabIndex = 1;
+            conditionValidationRule9.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule9.ErrorText = "Informe o documento";
+            this.validator.SetValidationRule(this.tfDocument, conditionValidationRule9);
+            this.tfDocument.Leave += new System.EventHandler(this.tfDocument_Leave);
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(130, 31);
+            this.labelControl2.Location = new System.Drawing.Point(179, 31);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(54, 13);
             this.labelControl2.TabIndex = 0;
@@ -476,25 +543,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCity.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfComplement.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCep.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfMobile.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfDistrict.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfAddress.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbTypeDocument.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfISuframa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfIE.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfFantasyName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCorporateName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfDocument.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.validator)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -505,41 +573,44 @@
         private WCButtons.Black.ButtonSaveBlack btnSave;
         private WCButtons.Black.ButtonCancelBlack btnCancel;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.ComboBoxEdit cbTypeDocument;
+        private DevExpress.XtraEditors.TextEdit tfISuframa;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit tfIE;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit tfFantasyName;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit tfCorporateName;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit tfDocument;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit2;
+        private DevExpress.XtraEditors.SearchLookUpEdit tfCity;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
+        private DevExpress.XtraEditors.SearchLookUpEdit cbState;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit tfComplement;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit tfNumber;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
+        private DevExpress.XtraEditors.TextEdit tfCep;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
+        private DevExpress.XtraEditors.TextEdit tfMobile;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
+        private DevExpress.XtraEditors.TextEdit tfPhone;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private DevExpress.XtraEditors.TextEdit textEdit13;
+        private DevExpress.XtraEditors.TextEdit tfDistrict;
+        private DevExpress.XtraEditors.TextEdit tfEmail;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
+        private DevExpress.XtraEditors.TextEdit tfAddress;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider validator;
+        private DevExpress.XtraEditors.LabelControl lbErrorDocument;
+        private DevExpress.XtraEditors.TextEdit tfId;
+        private DevExpress.XtraEditors.LabelControl labelControl17;
 
     }
 }

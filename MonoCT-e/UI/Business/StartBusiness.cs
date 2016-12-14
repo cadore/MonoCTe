@@ -18,5 +18,21 @@ namespace MonoCT_e.UI.Business
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Program.Exit(0);
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            BusinessForm bf = new BusinessForm();
+            DialogResult rs = bf.ShowDialog();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

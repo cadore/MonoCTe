@@ -1,8 +1,6 @@
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\bin\Debug\MonoCT-e.exe.config
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\bin\Debug\MonoCT-e.exe
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\bin\Debug\MonoCT-e.pdb
-C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\bin\Debug\RestSharp.dll
-C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\bin\Debug\RestSharp.xml
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT_e.Form1.resources
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT_e.Properties.Resources.resources
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT-e.csproj.GenerateResource.Cache
@@ -18,3 +16,5 @@ C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT-e.
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT_e.UI.Business.BusinessForm.resources
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT_e.UI.Business.StartBusiness.resources
 C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT_e.UI.LoginForm.resources
+C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT_e.UI.Customers.CustomerForm.resources
+C:\Users\WCadore\Programação\C#\Projects\MonoCT-e\MonoCT-e\obj\Debug\MonoCT_e.UI.Vehicles.VehicleForm.resources

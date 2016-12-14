@@ -17,6 +17,12 @@ namespace MonoCT_e.UI
         {
             InitializeComponent();
             lbErrorPasswd.Visible = false;
+
+            if (Environment.MachineName == "CADORE-NOTE")
+            {
+                tfUser.Text = "admin";
+                tfPassword.Text = "admin";
+            }     
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -34,7 +40,7 @@ namespace MonoCT_e.UI
             string user = tfUser.EditValue.ToString();
             string passwd = tfPassword.EditValue.ToString();
 
-            if (false)
+            if (true)
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();
@@ -47,6 +53,14 @@ namespace MonoCT_e.UI
                 tfUser.Focus();
                 return;
             }
+        }
+
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnLogin_Click(sender, e);
+            else if (e.KeyCode == Keys.Escape)
+                btnExit_Click(sender, e);
         }
     }
 }

@@ -43,7 +43,7 @@ namespace MonoCT_e
                 Exit(1);
             }
         }
-        static void Exit(int exit)
+        public static void Exit(int exit)
         {
             Environment.Exit(exit);
         }
