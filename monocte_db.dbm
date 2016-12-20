@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel>
+<schema name="public" protected="true" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<database name="monocte_db" encoding="UTF8">
+</database>
+
+<table name="users">
+	<schema name="public"/>
+	<position x="406.444" y="425"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="full_name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="login">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="password">
+		<type name="character varying" length="2048"/>
+	</column>
+	<column name="last_acess">
+		<type name="timestamp"/>
+	</column>
+	<constraint name="PK_users_id" type="pk-constr" factor="10" table="public.users">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="driver">
+	<schema name="public"/>
+	<position x="23.1111" y="256.333"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="full_name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="cpf">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="phone">
+		<type name="character varying" length="255"/>
+	</column>
+	<constraint name="PK_drivers_id" type="pk-constr" factor="10" table="public.driver">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="vehicles">
+	<schema name="public"/>
+	<position x="24.8889" y="380.444"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="cod_renavam">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="board">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="tare_kg">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="capacity_kg">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="capacity_m3">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="type_wheeled">
+		<type name="integer"/>
+	</column>
+	<column name="type_body">
+		<type name="integer"/>
+	</column>
+	<column name="type_vehicle">
+		<type name="integer"/>
+	</column>
+	<column name="property">
+		<type name="integer"/>
+	</column>
+	<column name="vehicles_is_business">
+		<type name="boolean"/>
+	</column>
+	<constraint name="PK_vehicles_id" type="pk-constr" factor="10" table="public.vehicles">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="states">
+	<schema name="public"/>
+	<position x="789.333" y="37.6667"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="symbol">
+		<type name="character varying" length="5"/>
+	</column>
+	<column name="cod_ibge">
+		<type name="integer"/>
+	</column>
+	<constraint name="PK_states_id" type="pk-constr" factor="10" table="public.states">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="city">
+	<schema name="public"/>
+	<position x="772.222" y="246.222"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="cod_ibge">
+		<type name="integer"/>
+	</column>
+	<column name="population">
+		<type name="integer"/>
+	</column>
+	<column name="demographic">
+		<type name="integer"/>
+	</column>
+	<column name="gentilic">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="area">
+		<type name="numeric" precision="0"/>
+	</column>
+	<column name="zip_code">
+		<type name="character varying" length="255"/>
+	</column>
+	<constraint name="PK_city_id" type="pk-constr" factor="10" table="public.city">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="states_hm_city" type="rel1n"
+	 src-col-pattern="state_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="8" constr-indexes="1"
+	 src-table="public.states"
+	 dst-table="public.city"
+	 src-required="true" dst-required="false"/>
+
+<relationship name="states_hm_vehicles" type="rel1n"
+	 src-col-pattern="state_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="11" constr-indexes="1"
+	 src-table="public.states"
+	 dst-table="public.vehicles"
+	 src-required="true" dst-required="false"/>
+
+<table name="customers">
+	<schema name="public"/>
+	<position x="17" y="17.2222"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="type_document">
+		<type name="integer"/>
+	</column>
+	<column name="document">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="ie">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="ie_suframa">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="corporate_name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="fantasy_name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="mobile">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="email">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="phone">
+		<type name="character varying" length="255"/>
+	</column>
+	<constraint name="PK_customers_id" type="pk-constr" factor="10" table="public.customers">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="address">
+	<schema name="public"/>
+	<position x="755.556" y="446.444"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="district">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="number">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="complement">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="cep">
+		<type name="character varying" length="255"/>
+	</column>
+	<constraint name="PK_address_id" type="pk-constr" factor="10" table="public.address">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="states_hm_address" type="rel1n"
+	 src-col-pattern="state_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="6" constr-indexes="1"
+	 src-table="public.states"
+	 dst-table="public.address"
+	 src-required="true" dst-required="false"/>
+
+<relationship name="city_hm_address" type="rel1n"
+	 src-col-pattern="city_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="7" constr-indexes="2"
+	 src-table="public.city"
+	 dst-table="public.address"
+	 src-required="true" dst-required="false"/>
+
+<relationship name="address_hm_customers" type="rel1n"
+	 src-col-pattern="{st}_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="7" constr-indexes="1"
+	 src-table="public.address"
+	 dst-table="public.customers"
+	 src-required="true" dst-required="false"/>
+
+<table name="business">
+	<schema name="public"/>
+	<position x="396" y="17.4444"/>
+	<column name="id" not-null="true">
+		<type name="bigserial"/>
+	</column>
+	<column name="cnpj">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="ie">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="corporate_name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="fantasy_name">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="phone">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="send_cte">
+		<type name="boolean"/>
+	</column>
+	<column name="tokenNS">
+		<type name="character varying" length="255"/>
+	</column>
+	<constraint name="PK_business_id" type="pk-constr" factor="10" table="public.business">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="address_hm_business" type="rel1n"
+	 src-col-pattern="{st}_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="8" constr-indexes="1"
+	 src-table="public.address"
+	 dst-table="public.business"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="business_hm_customers" type="rel1n"
+	 src-col-pattern="{st}_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="11" constr-indexes="2"
+	 src-table="public.business"
+	 dst-table="public.customers"
+	 src-required="true" dst-required="false"/>
+
+<relationship name="business_hm_driver" type="rel1n"
+	 src-col-pattern="{st}_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="4" constr-indexes="1"
+	 src-table="public.business"
+	 dst-table="public.driver"
+	 src-required="true" dst-required="false"/>
+
+<relationship name="business_hm_vehicles" type="rel1n"
+	 src-col-pattern="{st}_{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 col-indexes="12" constr-indexes="2"
+	 src-table="public.business"
+	 dst-table="public.vehicles"
+	 src-required="true" dst-required="false"/>
+
+</dbmodel>

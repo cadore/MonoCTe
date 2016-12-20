@@ -19,6 +19,7 @@ namespace MonoCT_e.UI.Utils
         {
             //SplashScreenManager.ShowForm(null, typeof(PleaseWaitForm), false, false, false);
             this.BorderStyle = BorderStyle.FixedSingle;
+            IsNew = false;
         }
 
         protected bool MessageToSave(string s)

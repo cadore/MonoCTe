@@ -128,7 +128,7 @@
             this.btnSave.Location = new System.Drawing.Point(558, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(110, 33);
-            this.btnSave.TabIndex = 1;
+            this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Salvar";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
@@ -145,7 +145,7 @@
             this.btnCancel.Location = new System.Drawing.Point(674, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(110, 33);
-            this.btnCancel.TabIndex = 0;
+            this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -192,16 +192,18 @@
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(789, 404);
-            this.groupControl1.TabIndex = 2;
+            this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Clientes";
             // 
             // tfId
             // 
             this.tfId.Location = new System.Drawing.Point(674, 50);
             this.tfId.Name = "tfId";
+            this.tfId.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfId.Properties.ReadOnly = true;
             this.tfId.Size = new System.Drawing.Size(100, 20);
             this.tfId.TabIndex = 22;
+            this.tfId.TabStop = false;
             // 
             // labelControl17
             // 
@@ -230,7 +232,7 @@
             this.tfCity.Properties.NullText = "";
             this.tfCity.Properties.View = this.gridView1;
             this.tfCity.Size = new System.Drawing.Size(324, 20);
-            this.tfCity.TabIndex = 18;
+            this.tfCity.TabIndex = 12;
             conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule1.ErrorText = "Informe a cidade";
             this.validator.SetValidationRule(this.tfCity, conditionValidationRule1);
@@ -251,7 +253,7 @@
             this.cbState.Properties.NullText = "";
             this.cbState.Properties.View = this.searchLookUpEdit1View;
             this.cbState.Size = new System.Drawing.Size(99, 20);
-            this.cbState.TabIndex = 19;
+            this.cbState.TabIndex = 11;
             conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule2.ErrorText = "Informe o Estado";
             this.validator.SetValidationRule(this.cbState, conditionValidationRule2);
@@ -267,12 +269,13 @@
             // 
             this.tfComplement.Location = new System.Drawing.Point(605, 219);
             this.tfComplement.Name = "tfComplement";
+            this.tfComplement.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfComplement.Size = new System.Drawing.Size(169, 20);
-            this.tfComplement.TabIndex = 12;
+            this.tfComplement.TabIndex = 8;
             // 
             // labelControl16
             // 
-            this.labelControl16.Location = new System.Drawing.Point(348, 294);
+            this.labelControl16.Location = new System.Drawing.Point(348, 320);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(28, 13);
             this.labelControl16.TabIndex = 4;
@@ -290,8 +293,9 @@
             // 
             this.tfNumber.Location = new System.Drawing.Point(450, 219);
             this.tfNumber.Name = "tfNumber";
+            this.tfNumber.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfNumber.Size = new System.Drawing.Size(149, 20);
-            this.tfNumber.TabIndex = 13;
+            this.tfNumber.TabIndex = 7;
             conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule3.ErrorText = "Informe o numero";
             this.validator.SetValidationRule(this.tfNumber, conditionValidationRule3);
@@ -316,11 +320,12 @@
             // 
             this.tfCep.Location = new System.Drawing.Point(205, 265);
             this.tfCep.Name = "tfCep";
+            this.tfCep.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfCep.Properties.Mask.EditMask = "00000-000";
             this.tfCep.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
             this.tfCep.Properties.Mask.SaveLiteral = false;
             this.tfCep.Size = new System.Drawing.Size(134, 20);
-            this.tfCep.TabIndex = 14;
+            this.tfCep.TabIndex = 10;
             conditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule4.ErrorText = "informe o CEP";
             this.validator.SetValidationRule(this.tfCep, conditionValidationRule4);
@@ -336,16 +341,17 @@
             // tfMobile
             // 
             this.tfMobile.EditValue = "";
-            this.tfMobile.Location = new System.Drawing.Point(206, 313);
+            this.tfMobile.Location = new System.Drawing.Point(206, 339);
             this.tfMobile.Name = "tfMobile";
+            this.tfMobile.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfMobile.Properties.Mask.EditMask = "(00) 0000-0000";
             this.tfMobile.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
             this.tfMobile.Size = new System.Drawing.Size(133, 20);
-            this.tfMobile.TabIndex = 15;
+            this.tfMobile.TabIndex = 14;
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(206, 294);
+            this.labelControl15.Location = new System.Drawing.Point(206, 320);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(33, 13);
             this.labelControl15.TabIndex = 8;
@@ -353,16 +359,17 @@
             // 
             // tfPhone
             // 
-            this.tfPhone.Location = new System.Drawing.Point(10, 313);
+            this.tfPhone.Location = new System.Drawing.Point(10, 339);
             this.tfPhone.Name = "tfPhone";
+            this.tfPhone.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfPhone.Properties.Mask.EditMask = "(00) 0000-0000";
             this.tfPhone.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
             this.tfPhone.Size = new System.Drawing.Size(189, 20);
-            this.tfPhone.TabIndex = 15;
+            this.tfPhone.TabIndex = 13;
             // 
             // labelControl12
             // 
-            this.labelControl12.Location = new System.Drawing.Point(10, 294);
+            this.labelControl12.Location = new System.Drawing.Point(10, 320);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(42, 13);
             this.labelControl12.TabIndex = 8;
@@ -372,8 +379,9 @@
             // 
             this.tfDistrict.Location = new System.Drawing.Point(10, 265);
             this.tfDistrict.Name = "tfDistrict";
+            this.tfDistrict.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfDistrict.Size = new System.Drawing.Size(189, 20);
-            this.tfDistrict.TabIndex = 16;
+            this.tfDistrict.TabIndex = 9;
             conditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule5.ErrorText = "Informe o bairro";
             this.validator.SetValidationRule(this.tfDistrict, conditionValidationRule5);
@@ -381,12 +389,12 @@
             // tfEmail
             // 
             this.tfEmail.EditValue = "";
-            this.tfEmail.Location = new System.Drawing.Point(345, 313);
+            this.tfEmail.Location = new System.Drawing.Point(345, 339);
             this.tfEmail.Name = "tfEmail";
             this.tfEmail.Properties.Mask.EditMask = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}";
             this.tfEmail.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.tfEmail.Size = new System.Drawing.Size(429, 20);
-            this.tfEmail.TabIndex = 17;
+            this.tfEmail.TabIndex = 15;
             // 
             // labelControl11
             // 
@@ -400,8 +408,9 @@
             // 
             this.tfAddress.Location = new System.Drawing.Point(10, 219);
             this.tfAddress.Name = "tfAddress";
+            this.tfAddress.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfAddress.Size = new System.Drawing.Size(434, 20);
-            this.tfAddress.TabIndex = 17;
+            this.tfAddress.TabIndex = 6;
             conditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule6.ErrorText = "Informe o endereço";
             this.validator.SetValidationRule(this.tfAddress, conditionValidationRule6);
@@ -433,7 +442,7 @@
             "CPF/Pessoa Fisica"});
             this.cbTypeDocument.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbTypeDocument.Size = new System.Drawing.Size(160, 20);
-            this.cbTypeDocument.TabIndex = 2;
+            this.cbTypeDocument.TabIndex = 0;
             conditionValidationRule7.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule7.ErrorText = "Informe o tipo de documento";
             this.validator.SetValidationRule(this.cbTypeDocument, conditionValidationRule7);
@@ -443,8 +452,9 @@
             // 
             this.tfISuframa.Location = new System.Drawing.Point(523, 50);
             this.tfISuframa.Name = "tfISuframa";
+            this.tfISuframa.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfISuframa.Size = new System.Drawing.Size(135, 20);
-            this.tfISuframa.TabIndex = 1;
+            this.tfISuframa.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -458,8 +468,9 @@
             // 
             this.tfIE.Location = new System.Drawing.Point(360, 50);
             this.tfIE.Name = "tfIE";
+            this.tfIE.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfIE.Size = new System.Drawing.Size(149, 20);
-            this.tfIE.TabIndex = 1;
+            this.tfIE.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -473,8 +484,9 @@
             // 
             this.tfFantasyName.Location = new System.Drawing.Point(10, 153);
             this.tfFantasyName.Name = "tfFantasyName";
+            this.tfFantasyName.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfFantasyName.Size = new System.Drawing.Size(764, 20);
-            this.tfFantasyName.TabIndex = 1;
+            this.tfFantasyName.TabIndex = 5;
             // 
             // labelControl6
             // 
@@ -488,8 +500,9 @@
             // 
             this.tfCorporateName.Location = new System.Drawing.Point(10, 103);
             this.tfCorporateName.Name = "tfCorporateName";
+            this.tfCorporateName.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfCorporateName.Size = new System.Drawing.Size(764, 20);
-            this.tfCorporateName.TabIndex = 1;
+            this.tfCorporateName.TabIndex = 4;
             conditionValidationRule8.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule8.ErrorText = "Informe a Razão Social";
             this.validator.SetValidationRule(this.tfCorporateName, conditionValidationRule8);
@@ -507,6 +520,7 @@
             this.tfDocument.Enabled = false;
             this.tfDocument.Location = new System.Drawing.Point(179, 50);
             this.tfDocument.Name = "tfDocument";
+            this.tfDocument.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tfDocument.Size = new System.Drawing.Size(170, 20);
             this.tfDocument.TabIndex = 1;
             conditionValidationRule9.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;

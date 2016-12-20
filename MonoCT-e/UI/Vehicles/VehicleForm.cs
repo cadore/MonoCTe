@@ -15,9 +15,15 @@ namespace MonoCT_e.UI.Vehicles
 {
     public partial class VehicleForm : UserControlUtil
     {
-        public VehicleForm()
+        public VehicleForm(vehicle v)
         {
             InitializeComponent();
+            if (v == null)
+            {
+                v = new vehicle() { business_id = Singleton.getCurrentBusiness().id };
+                IsNew = true;
+            }
+            bdgVehicle.DataSource = v;
         }
 
         private void rgVehicleIsBusiness_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,6 +56,22 @@ namespace MonoCT_e.UI.Vehicles
         {
             if (!validator.Validate())
                 return;
+
+            try
+            {
+                vehicle v = ((vehicle)bdgVehicle.Current);
+                v.Save();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(String.Format("{0}\n\n{1}", ex.Message, ex.InnerException));
+            }
+            finally
+            {
+                if (this.MessageToSave("Veículo"))
+                    desk.AddTabAndCloseCurrent(new VehicleForm(null), "Novo Veículo", false);
+            }
+
         }
     }
 }

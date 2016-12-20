@@ -1,7 +1,10 @@
 ﻿using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
+using DevExpress.XtraSplashScreen;
+using MonoCT_e.Connection;
 using MonoCT_e.UI;
+using MonoCT_e.WaitForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +26,11 @@ namespace MonoCT_e
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("Office 2013"); //Office 2013 //The Asphalt World
-            //verefyProcesses();
-            //SplashScreenManager.ShowForm(null, typeof(SplashScreenForm), false, false, false);
-            //Application.Run(new DesktopForm());
-            //initializeCfg();
-            login();
+            
+            SplashScreenManager.ShowForm(null, typeof(SplashScreenForm), false, true, false);
+            new ConnectionUtil();
+            Application.Run(new DesktopForm());
+            //login();
         }
 
         private static void login()

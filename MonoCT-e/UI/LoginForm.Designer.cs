@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tfUser = new DevExpress.XtraEditors.TextEdit();
@@ -62,9 +62,9 @@
             this.tfUser.Properties.Appearance.Options.UseFont = true;
             this.tfUser.Size = new System.Drawing.Size(406, 22);
             this.tfUser.TabIndex = 0;
-            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule3.ErrorText = "Informe o Usuário";
-            this.validator.SetValidationRule(this.tfUser, conditionValidationRule3);
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Informe o Usuário";
+            this.validator.SetValidationRule(this.tfUser, conditionValidationRule1);
             // 
             // labelControl2
             // 
@@ -84,9 +84,9 @@
             this.tfPassword.Properties.UseSystemPasswordChar = true;
             this.tfPassword.Size = new System.Drawing.Size(406, 22);
             this.tfPassword.TabIndex = 1;
-            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule1.ErrorText = "Informe a Senha";
-            this.validator.SetValidationRule(this.tfPassword, conditionValidationRule1);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Informe a Senha";
+            this.validator.SetValidationRule(this.tfPassword, conditionValidationRule2);
             // 
             // btnExit
             // 
@@ -150,6 +150,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login MonoCT-e - Cadore Tecnologia";
+            this.Shown += new System.EventHandler(this.LoginForm_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.tfUser.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tfPassword.Properties)).EndInit();

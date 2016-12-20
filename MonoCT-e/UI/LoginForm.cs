@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using MonoCT_e.Utils;
 
 namespace MonoCT_e.UI
 {
@@ -37,11 +38,18 @@ namespace MonoCT_e.UI
             if (!validator.Validate())
                 return;
 
-            string user = tfUser.EditValue.ToString();
+            string login = tfUser.EditValue.ToString();
             string passwd = tfPassword.EditValue.ToString();
 
-            if (true)
+
+
+            user s = user.SingleOrDefault("WHERE login=@0 AND password=@1",
+                tfUser.EditValue, Crypto.Encrypt(tfPassword.Text));
+            if (s != null)
             {
+                s.last_acess = user.Now();
+                s.Save();
+                Singleton.setCurrentUser(s);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
@@ -61,6 +69,12 @@ namespace MonoCT_e.UI
                 btnLogin_Click(sender, e);
             else if (e.KeyCode == Keys.Escape)
                 btnExit_Click(sender, e);
+        }
+
+        private void LoginForm_Shown(object sender, EventArgs e)
+        {
+            tfUser.SelectAll();
+            tfUser.Focus();
         }
     }
 }

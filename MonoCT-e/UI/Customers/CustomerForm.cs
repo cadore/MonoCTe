@@ -15,6 +15,7 @@ namespace MonoCT_e.UI.Customers
 {
     public partial class CustomerForm : UserControlUtil
     {
+        bool error = false;
         public CustomerForm()
         {
             InitializeComponent();
@@ -48,17 +49,25 @@ namespace MonoCT_e.UI.Customers
         {
             if (!validator.Validate())
                 return;
+            if (error)
+                return;
         }
 
         private void tfDocument_Leave(object sender, EventArgs e)
         {
             string d = tfDocument.EditValue.ToString();
-            if(!String.IsNullOrEmpty(d))
+            if (!String.IsNullOrEmpty(d))
             {
                 if (!Validations.isCPFCNPJ(d, false))
+                {
                     lbErrorDocument.Visible = true;
+                    error = true;
+                }
                 else
+                {
                     lbErrorDocument.Visible = false;
+                    error = false;
+                }
             }
         }
     }
