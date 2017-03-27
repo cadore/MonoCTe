@@ -31,8 +31,6 @@ namespace MonoCT_e.Connection
                 ConnectionString = String.Format("Server={0};Port={1};User id={2};password={3};Database={4};",
                 Host, Port, User, Password, DataBase);
 
-                Console.WriteLine(ConnectionString);
-                Console.WriteLine(InvariantName);
             }
             catch (Exception ex)
             {

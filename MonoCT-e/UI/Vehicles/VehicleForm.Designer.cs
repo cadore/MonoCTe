@@ -46,9 +46,14 @@
             this.btnCancel = new WCButtons.Black.ButtonCancelBlack();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.cbCustomer = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.searchLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.rgVehicleIsBusiness = new DevExpress.XtraEditors.RadioGroup();
             this.bdgVehicle = new System.Windows.Forms.BindingSource(this.components);
+            this.bdgCustomers = new System.Windows.Forms.BindingSource(this.components);
+            this.searchLookUpEdit2View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colid = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldocument = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcorporate_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colfantasy_name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.rgVehicleIsBusiness = new DevExpress.XtraEditors.RadioGroup();
             this.cbState = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.rgProperty = new DevExpress.XtraEditors.RadioGroup();
@@ -80,9 +85,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbCustomer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdgVehicle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdgCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgVehicleIsBusiness.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdgVehicle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgProperty.Properties)).BeginInit();
@@ -185,17 +191,73 @@
             this.cbCustomer.Name = "cbCustomer";
             this.cbCustomer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbCustomer.Properties.DataSource = this.bdgCustomers;
+            this.cbCustomer.Properties.DisplayMember = "id";
             this.cbCustomer.Properties.NullText = "";
+            this.cbCustomer.Properties.ValueMember = "corporate_name";
             this.cbCustomer.Properties.View = this.searchLookUpEdit2View;
             this.cbCustomer.Size = new System.Drawing.Size(253, 20);
             this.cbCustomer.TabIndex = 11;
             // 
+            // bdgVehicle
+            // 
+            this.bdgVehicle.DataSource = typeof(MonoCT_e.vehicle);
+            // 
+            // bdgCustomers
+            // 
+            this.bdgCustomers.DataSource = typeof(MonoCT_e.customer);
+            // 
             // searchLookUpEdit2View
             // 
+            this.searchLookUpEdit2View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colid,
+            this.coldocument,
+            this.colcorporate_name,
+            this.colfantasy_name});
             this.searchLookUpEdit2View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.searchLookUpEdit2View.Name = "searchLookUpEdit2View";
             this.searchLookUpEdit2View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit2View.OptionsView.ShowGroupPanel = false;
+            // 
+            // colid
+            // 
+            this.colid.FieldName = "id";
+            this.colid.FieldNameSortGroup = "Cod.";
+            this.colid.Name = "colid";
+            this.colid.OptionsColumn.AllowEdit = false;
+            this.colid.Visible = true;
+            this.colid.VisibleIndex = 0;
+            this.colid.Width = 44;
+            // 
+            // coldocument
+            // 
+            this.coldocument.FieldName = "document";
+            this.coldocument.FieldNameSortGroup = "Documento";
+            this.coldocument.Name = "coldocument";
+            this.coldocument.OptionsColumn.AllowEdit = false;
+            this.coldocument.Visible = true;
+            this.coldocument.VisibleIndex = 3;
+            this.coldocument.Width = 160;
+            // 
+            // colcorporate_name
+            // 
+            this.colcorporate_name.FieldName = "corporate_name";
+            this.colcorporate_name.FieldNameSortGroup = "Razão Social";
+            this.colcorporate_name.Name = "colcorporate_name";
+            this.colcorporate_name.OptionsColumn.AllowEdit = false;
+            this.colcorporate_name.Visible = true;
+            this.colcorporate_name.VisibleIndex = 1;
+            this.colcorporate_name.Width = 259;
+            // 
+            // colfantasy_name
+            // 
+            this.colfantasy_name.FieldName = "fantasy_name";
+            this.colfantasy_name.FieldNameSortGroup = "Nome Fantasia";
+            this.colfantasy_name.Name = "colfantasy_name";
+            this.colfantasy_name.OptionsColumn.AllowEdit = false;
+            this.colfantasy_name.Visible = true;
+            this.colfantasy_name.VisibleIndex = 2;
+            this.colfantasy_name.Width = 233;
             // 
             // rgVehicleIsBusiness
             // 
@@ -215,10 +277,6 @@
             conditionValidationRule1.ErrorText = "Informe se o veiculo pertence a empresa emitente";
             this.validator.SetValidationRule(this.rgVehicleIsBusiness, conditionValidationRule1);
             this.rgVehicleIsBusiness.SelectedIndexChanged += new System.EventHandler(this.rgVehicleIsBusiness_SelectedIndexChanged);
-            // 
-            // bdgVehicle
-            // 
-            this.bdgVehicle.DataSource = typeof(MonoCT_e.vehicle);
             // 
             // cbState
             // 
@@ -511,9 +569,10 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbCustomer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdgVehicle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdgCustomers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgVehicleIsBusiness.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdgVehicle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgProperty.Properties)).EndInit();
@@ -567,5 +626,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider validator;
         private System.Windows.Forms.BindingSource bdgVehicle;
+        private System.Windows.Forms.BindingSource bdgCustomers;
+        private DevExpress.XtraGrid.Columns.GridColumn colid;
+        private DevExpress.XtraGrid.Columns.GridColumn coldocument;
+        private DevExpress.XtraGrid.Columns.GridColumn colcorporate_name;
+        private DevExpress.XtraGrid.Columns.GridColumn colfantasy_name;
     }
 }

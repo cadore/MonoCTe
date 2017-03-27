@@ -35,28 +35,28 @@
             this.btnCancelar = new WCButtons.Black.ButtonCancelBlack();
             this.bdgDrivers = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.tfFullName = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.tfCpf = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colid = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colfull_name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcpf = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colphone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.tfCpf = new DevExpress.XtraEditors.TextEdit();
-            this.tfFullName = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdgDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tfCpf.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tfFullName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCpf.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -117,6 +117,52 @@
             this.groupControl1.Size = new System.Drawing.Size(849, 412);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Busca de Motoristas";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.tfFullName);
+            this.panelControl2.Controls.Add(this.labelControl2);
+            this.panelControl2.Controls.Add(this.tfCpf);
+            this.panelControl2.Controls.Add(this.labelControl1);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl2.Location = new System.Drawing.Point(2, 21);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(845, 31);
+            this.panelControl2.TabIndex = 1;
+            // 
+            // tfFullName
+            // 
+            this.tfFullName.Location = new System.Drawing.Point(362, 5);
+            this.tfFullName.Name = "tfFullName";
+            this.tfFullName.Size = new System.Drawing.Size(478, 20);
+            this.tfFullName.TabIndex = 3;
+            this.tfFullName.EditValueChanged += new System.EventHandler(this.tfFullName_EditValueChanged);
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(277, 8);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(79, 13);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "Nome Completo:";
+            // 
+            // tfCpf
+            // 
+            this.tfCpf.Location = new System.Drawing.Point(34, 5);
+            this.tfCpf.Name = "tfCpf";
+            this.tfCpf.Properties.Mask.EditMask = "000.000.000-00";
+            this.tfCpf.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.tfCpf.Size = new System.Drawing.Size(220, 20);
+            this.tfCpf.TabIndex = 1;
+            this.tfCpf.EditValueChanged += new System.EventHandler(this.tfCpf_EditValueChanged);
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(5, 8);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(23, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "CPF:";
             // 
             // gridControl
             // 
@@ -182,52 +228,6 @@
             this.colphone.VisibleIndex = 3;
             this.colphone.Width = 193;
             // 
-            // panelControl2
-            // 
-            this.panelControl2.Controls.Add(this.tfFullName);
-            this.panelControl2.Controls.Add(this.labelControl2);
-            this.panelControl2.Controls.Add(this.tfCpf);
-            this.panelControl2.Controls.Add(this.labelControl1);
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(2, 21);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(845, 31);
-            this.panelControl2.TabIndex = 1;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(5, 8);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(23, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "CPF:";
-            // 
-            // tfCpf
-            // 
-            this.tfCpf.Location = new System.Drawing.Point(34, 5);
-            this.tfCpf.Name = "tfCpf";
-            this.tfCpf.Properties.Mask.EditMask = "000.000.000-00";
-            this.tfCpf.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.tfCpf.Size = new System.Drawing.Size(220, 20);
-            this.tfCpf.TabIndex = 1;
-            this.tfCpf.EditValueChanged += new System.EventHandler(this.tfCpf_EditValueChanged);
-            // 
-            // tfFullName
-            // 
-            this.tfFullName.Location = new System.Drawing.Point(362, 5);
-            this.tfFullName.Name = "tfFullName";
-            this.tfFullName.Size = new System.Drawing.Size(478, 20);
-            this.tfFullName.TabIndex = 3;
-            this.tfFullName.EditValueChanged += new System.EventHandler(this.tfFullName_EditValueChanged);
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(277, 8);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(79, 13);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "Nome Completo:";
-            // 
             // SearchDriversForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,13 +241,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.bdgDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tfCpf.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tfFullName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tfCpf.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

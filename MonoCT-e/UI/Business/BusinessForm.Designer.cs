@@ -132,9 +132,9 @@
             this.panelControl2.Controls.Add(this.btnSave);
             this.panelControl2.Controls.Add(this.btnCancel);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(0, 375);
+            this.panelControl2.Location = new System.Drawing.Point(0, 371);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(948, 48);
+            this.panelControl2.Size = new System.Drawing.Size(944, 48);
             this.panelControl2.TabIndex = 1;
             // 
             // btnSave
@@ -178,7 +178,7 @@
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(948, 375);
+            this.groupControl1.Size = new System.Drawing.Size(944, 371);
             this.groupControl1.TabIndex = 0;
             // 
             // tab
@@ -187,7 +187,7 @@
             this.tab.Location = new System.Drawing.Point(2, 2);
             this.tab.Name = "tab";
             this.tab.SelectedTabPage = this.tabPrincipal;
-            this.tab.Size = new System.Drawing.Size(944, 371);
+            this.tab.Size = new System.Drawing.Size(940, 367);
             this.tab.TabIndex = 0;
             this.tab.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tabPrincipal,
@@ -225,7 +225,7 @@
             this.tabPrincipal.Controls.Add(this.labelControl10);
             this.tabPrincipal.Controls.Add(this.labelControl11);
             this.tabPrincipal.Name = "tabPrincipal";
-            this.tabPrincipal.Size = new System.Drawing.Size(938, 343);
+            this.tabPrincipal.Size = new System.Drawing.Size(934, 339);
             this.tabPrincipal.Text = "Dados do Emitente";
             // 
             // lbErrorCnpj
@@ -609,7 +609,7 @@
             // 
             this.tabEmail.Controls.Add(this.labelControl15);
             this.tabEmail.Name = "tabEmail";
-            this.tabEmail.Size = new System.Drawing.Size(929, 337);
+            this.tabEmail.Size = new System.Drawing.Size(938, 343);
             this.tabEmail.Text = "Email";
             // 
             // labelControl15
@@ -627,7 +627,7 @@
             this.tabSystem.Controls.Add(this.labelControl14);
             this.tabSystem.Controls.Add(this.labelControl13);
             this.tabSystem.Name = "tabSystem";
-            this.tabSystem.Size = new System.Drawing.Size(929, 337);
+            this.tabSystem.Size = new System.Drawing.Size(938, 343);
             this.tabSystem.Text = "Dados do Sistema";
             // 
             // tfTokenBusiness
@@ -666,7 +666,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 423);
+            this.ClientSize = new System.Drawing.Size(944, 419);
             this.ControlBox = false;
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.panelControl2);

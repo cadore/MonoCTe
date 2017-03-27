@@ -109,7 +109,7 @@ namespace MonoCT_e.UI
 
         private void btnNewVehicle_ItemClick(object sender, ItemClickEventArgs e)
         {
-            AddTab(new VehicleForm(), "Novo Veiculo", false);
+            AddTab(new VehicleForm(null), "Novo Veiculo", false);
         }
 
         private void btnNewDriver_ItemClick(object sender, ItemClickEventArgs e)
